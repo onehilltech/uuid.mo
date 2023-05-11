@@ -1,5 +1,6 @@
 import Hex "mo:encoding/Hex";
 import List "mo:base/List";
+import Array "mo:base/Array";
 
 module {
 	// A UUID is a 128 bit (16 byte) Universal Unique IDentifier as defined in RFC 4122.
@@ -18,4 +19,12 @@ module {
 	    let (p3, xs3) = List.split(2, xs2);
 	    t # Hex.encode(List.toArray(p3)) # "-" # Hex.encode(List.toArray(xs3));
 	};
+
+	public func equal (uuid1 : UUID, uuid2: UUID) : bool {
+    Array.equal <Nat8> (uuid1, uuid2);
+	}
+
+	public func fromText (text: Text) : ?UUID {
+	  null;
+	}
 };
