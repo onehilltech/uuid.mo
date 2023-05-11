@@ -1,7 +1,7 @@
-import Array "mo:base-0.7.3/Array";
+import Array "mo:base/Array";
 import Array_ "mo:array/Array";
-import Blob "mo:base-0.7.3/Blob";
-import Random "mo:base-0.7.3/Random";
+import Blob "mo:base/Blob";
+import Random "mo:base/Random";
 
 import UUID "../UUID";
 
